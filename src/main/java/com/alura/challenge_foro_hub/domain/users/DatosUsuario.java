@@ -1,0 +1,17 @@
+package com.alura.challenge_foro_hub.domain.users;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+
+public record DatosUsuario(
+        @NotBlank
+        String nombre,
+        @NotBlank
+        @Email
+        String correoElectronico,
+        @NotBlank
+        @Size(min = 6, message = "La contraseña debe tener al menos 6 caracteres")
+        String contrasena
+) {
+}
