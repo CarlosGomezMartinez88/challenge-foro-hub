@@ -23,12 +23,12 @@ public class SpringDocConfiguration {
                                         .bearerFormat("JWT")))
                 .info(new Info()
                         .title("ForoHub API")
-                        .description("API Rest de la aplicación ForoHub.")
+                        .description("API Rest de la aplicación Foro-Hub del Challenge de Alura.")
                         .contact(new Contact()
-                                .name("Equipo Backend")
-                                .email("backend@forohub.com"))
+                                .name("App Backend")
+                                .email("appbackend@foro-hub.com"))
                         .license(new License()
                                 .name("Apache 2.0")
-                                .url("http://forohub.com/api/licencia")));
+                                .url("http://foro-hub.com/api/licencia")));
     }
 }
